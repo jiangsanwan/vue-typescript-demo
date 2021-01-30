@@ -21,20 +21,28 @@
             :key="item.index"
             :index="item.index"
             :route="item.path"
-          >{{item.name}}</el-menu-item>
+            >{{ item.name }}</el-menu-item
+          >
         </el-menu>
       </el-col>
       <!-- 按钮 -->
       <el-col :span="5">
         <div></div>
         <div>
-          <el-button size="small" type="primary" @click="handleClick('login')">登录</el-button>
-          <el-button size="small" type="danger" @click="handleClick('register')">注册</el-button>
+          <el-button size="small" type="primary" @click="handleClick('login')"
+            >登录</el-button
+          >
+          <el-button size="small" type="danger" @click="handleClick('register')"
+            >注册</el-button
+          >
         </div>
       </el-col>
     </el-row>
     <!-- 登录注册弹框 -->
-    <RegisterAndLogin :dialogType="dialogType" :dialogVisible="dialogVisible"></RegisterAndLogin>
+    <RegisterAndLogin
+      :dialogType="dialogType"
+      :dialogVisible="dialogVisible"
+    ></RegisterAndLogin>
   </div>
 </template>
 <script lang="ts">

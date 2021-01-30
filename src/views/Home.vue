@@ -10,12 +10,14 @@
         <div class="list">
           <router-link class="link" to="/articles">文章</router-link>
           <router-link class="link" to="/project">项目</router-link>
+          <router-link class="link" to="/support">支持</router-link>
           <a
             target="_blank"
             rel="noopener noreferrer"
             class="link"
             href="https://github.com/zhaofangmei"
-          >github</a>
+            >github</a
+          >
         </div>
         <div class="introduce">时光正好，未来可期，加油 ！</div>
       </div>
